@@ -1,0 +1,436 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Nicole Resume</title>
+        <meta name="description" content="Nicole Resume web app">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#062f3b">
+        <meta name="msapplication-TileColor" content="#ffc40d">
+        <meta name="theme-color" content="#e7dfdf">
+        <meta name="apple-mobile-web-app-capable" content="yes"><!-- comment -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="default"><!-- comment -->
+        <link rel="apple-touch-startup-image" href="/apple-touch-icon.png">
+        
+        <script src="js/main.js"></script>
+        <!-- iOS Splash Screen Images -->
+        <link rel="apple-touch-startup-image" href="apple-splash-640.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="apple-splash-750.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="apple-splash-1242.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="apple-splash-1125.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="apple-splash-1536.png" media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="apple-splash-1668.png" media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="apple-splash-2048.png" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <span id="trigger" onClick="toggleNav()">
+                    <span class="triggerLine"></span>
+                    <span class="triggerLine"></span>
+                    <span class="triggerLine"></span>
+                    <span class="triggerLine"></span>
+                </span>
+                <h1 class="title"> Nicole Sollenberger</h1>
+                <nav class='nav'>
+                    <ul>
+                        <li><a href="#education" onclick="toggleNav()">Education</a></li>
+                        <li><a href="#employment" onclick="toggleNav()">Employment</a></li>
+                        <li><a href="#classes" onclick="toggleNav()">Classes</a></li>
+                        <li><a href="#skills" onclick="toggleNav()">Skills</a></li>
+                       
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+                <section id='addToHomeScreen'>
+                    <h1>Install App</h1>
+                    <img src='android-chrome-192x192.png' alt='Logo'/>
+                    Add My App To Your Home Screen?
+                    <br><!-- comment -->
+                    <a href='javascript:void(0)' onClick='hidePrompt()' style='text-decoration:none;'>
+                        No, Thanks
+                    </a>
+                    <button onclick="installApp()">Yes, Please!</button>
+                </section>
+                <article id="top">
+                    <header>
+                        <h1>Hello My Name is Nicole</h1>
+                        <p class="subtitle">
+                            Let me tell you about myself....
+                        </p>
+                     
+                        <div class="educationContainer"> 
+                            <div class="paragraphImage">
+                                <p>
+                                    <img class="responsiveImg" src="img/profilepic.jpeg" alt="Nicole Sollenberger" />
+                                </p>
+                                <p>
+                                    <a href="tel:7205396654">(720) 539-6654</a>
+                                </p>
+                                <p>
+                                    <a href="mailto:nikkisoll36@gmail.com">nikkisoll36@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <p>
+                            I am a senior at Penn State University majoring in 
+                            Information, Science, and Technology with a focus on 
+                            application development. I have extensive real world experience in 
+                            security, distribution and manufacturing. This 
+                            experience enables me to have a unique
+                            point of view in multiple areas where technology is implemented.
+                        </p>
+                        <p>
+                            I will graduate with a BA in December of 2023. I enjoy learning new
+                            technologies and development software. I have extensive experience with
+                            multiple programs such as IntelliJ, NetBeans, Adobe XD, Andriod Studio, XCode, 
+                            ESRI products, ArcGIS, and MSOffice365. I have 2 years experience in Java, HTML, and CSS. I have over 1 year experience 
+                            in GIS mapping, data entry, and data procurement. 
+                        </p>
+                        
+                        
+                        
+                    </header>
+                    <section id="education">
+                        <h2>Education</h2>
+                        <p>
+                            I have completed by BA at Penn State's World Campus in 2 years and 
+                            have completed USAF basic training and Security Police training. 
+                        </p>
+                        <div class="educationContainer">
+                            <h4>
+                                Pennsylvania State University
+                            </h4>
+                            <div class="paragraphImage">
+                                <p>
+                                    <img class="responsiveImg" src="img/pennstatelogo.jpg" alt="Penn State Logo" />
+                                </p>
+                                
+                            </div>
+                            <h5 class='h5'> Expected Graduation December 2024</h5>
+                            <p>
+                                
+                                BA Information, Science, and Technology
+                            </p>
+                            
+                            <p>
+                                <a href="#top">Back To Top</a>
+                            </p>
+                            
+                        </div>
+                        <div class="educationContainer">
+                            <h4>
+                                Colorado Institute of Art
+                            </h4>
+                            <div class="paragraphImage">
+                                <p>
+                                    <img class="responsiveImg" src="img/ait.jpeg" alt="Art Institute Logo" />
+                                </p>
+                                
+                            </div>
+                            <h5 class='h5'> January 1997 - January 1998</h5>
+                            <p>
+                                Completed 1 year at the Art Institute enrolled in Graphic Design
+                            </p>
+                            <p>
+                                This was many years ago but I learned concepts of design and color theory.
+                                None of the technology I learned at this time is relevant today, but
+                                I learned the concepts of design and that has been expanded upon with 
+                                my more recent education.
+                            </p>
+                            <p>
+                                <img class="responsiveImg2" src="img/chevy.jpeg" alt='chevy'/>
+                                
+                                <img class="responsiveImg2" src="img/watercolor.jpeg" alt='watercolor'/>
+                            </p>
+                            
+                            <p>
+                                <a href="#top">Back To Top</a>
+                            </p>
+                        </div>
+                        <div class="educationContainer">
+                            <h4>
+                                United States Air Force
+                            </h4>
+                            <div class="paragraphImage">
+                                <p>
+                                    <img class="responsiveImg2" src="img/airforce.jpeg" alt="Kerry Cramer" />
+                                </p>
+                                
+                            </div>
+                            <h5 class='h5'> January 1994 - June 1996</h5>
+                            <p>
+                                Successfully completed Air Force Basic Training and completed Security Police Training.
+                                This included extensive education on military law, weapons use and safety, and Air Base Ground
+                                Defense. Was stationed at F.E. Warren Air Base in Cheyenne Wyoming guarding nuclear weapons. 
+                                I had obtained a security clearance and was certified under Personal Reliability Program.
+                                
+                                 
+                            </p>
+                            
+                            <p>
+                                <a href="#top">Back To Top</a>
+                            </p>
+                        </div>
+                        
+                        
+                    </section>
+                    <section id="employment">
+                        <h2>Past Employment</h2>
+                        <p>
+                            This is my past employment that has given me vast experience in manufacturing, supply chain distribution, UL
+                            standards, OSHA compliance, PLC's, and nuclear safety.
+                            
+                           
+                        </p>
+                        <div class="educationContainer">
+                            <h4>United States Geological Survey</h4>
+                        </div>
+                        <h5 class='h5'>GeoPathways Intern 
+                            <br>
+                            August 2022 - Current</h5>
+                        
+                        <p>
+                            In this position I provided administative assistance to the Senior Program
+                            Advisor at US Geological Survey. I contributed to mulitple projects within our 
+                            Disaster Pilot which included creating a HUb within Amerigeo utilizing ArcGIS. I created
+                            content and shared with the organization. The Disaster Pilot project required global coordination
+                            with other interns and 3rd party partners including NOAA, NASA, FSA, Amazon, OSM, and Voyager Search.
+                            I acted as admin to our Voyager Search platform coordinating access and roles to our interns and multiple 
+                            partners.
+                        </p>
+                        <p>
+                        
+                            <a href="#top">Back To Top</a>
+                        </p>
+                         
+                        <div class="educationContainer">
+                          
+                            
+                            <h4>Appvion</h4>
+                            <h5 class='h5'>Manufacturing 
+                            <br>
+                            Febuary 2014 - April 2021</h5>
+                        </div>
+                         <p>
+                            I held multiple positions within Appvion that gave me extensive knowledge of paper 
+                            manufacturing process. All positions held within Appvion required compliance of OSHA safety and
+                            reporting standards along with knowledge of the MSDS. Working in a fast paced manufacturing environment
+                            required constant awareness of safety due to the many ways all the machinaery could easily kill you.
+                            
+                            
+                        </p>
+                         <h5 class='h5'>Water Operator</h5>
+                        <p>
+                            Responsible for 5 million gallons of water that was daily utilized by paper making operations. This
+                            included fresh water, fire water, and recyled bleached water. Had to ensure paper machines had 
+                            appropriate water pressure to manufactor paper while also ensuring used water was properly 
+                            directed so it could be bleached and reused in other various operations. This included directing water that 
+                            was not reusable directly to the waste treatment facility. Water was constantly tested for quality
+                            and reuseablity. 
+
+                        </p>
+                        
+                       
+                        <h5 class='h5'>Brown Stock Washer Operator</h5>
+                        <p>
+                            Responsible for operating 5 washers that cleaned pulp. This required constantly
+                            monitoring water levels and pulp consistancy and assisting in cooking wood chips to create pulp.
+                            
+                        </p>
+                        <h5 class='h5'>Pulp Press Operator</h5>
+                        <p>
+                            Operated pulp press to convert paper pulp into sheets of lap. This required constant monitoring to 
+                            ensure quality lap and proper operation. Kept track of quantity produced and location of storage.
+                            Loaded trailers with finished product and coordinated transportation of finished product to
+                            storage location
+                            and empty trailers. 
+
+                        </p>
+                        <h5 class='h5'>Fuel Operator</h5>
+                        <p>
+                            Responsible for loading fuel needed for boiler operations. This included feeding tree bark through 
+                            a pulverizor and loading coal into the coal bin. This was achieved by operating a front end loaded
+                            to feed bark and coal onto conveyors. 
+
+                        </p>
+                        <h5 class='h5'>Winder Operator Assistant</h5>
+                        <p>
+                            Assisted winder operator with set up and proper operation of winder that converter 2 tons
+                            jumbo rolls of paper into smaller rolls that where ordered by customers. Responsible for 
+                            verifying size and quality of ordered rolls. Labeled and packaged finished rolls. 
+             
+                        </p>
+                        <h5 class='h5'>Coating Operator</h5>
+                        <p>
+                            Responsible for coordinating with paper machine operator and coating department to facilitate
+                            a fast, low-waste paper change over. This entailed filling and switching coating tanks for wire and felt
+                            side of paper within a 5 minute window. Monitor coating tank levels, clean filters and used tanks while also
+                            testing starch for proper dilution and testing paper for proper additives.
+             
+                        </p>
+                        <div class="educationContainer">
+                            <h4>National Specialty Lighting</h4>
+                            <h5 class='h5'>Product Specialist 
+                            <br>
+                            May 2000 - October 2013</h5>
+                            <p>
+                                Responsible for assembling, packing, and shipping customer orders. Ensuring customer had
+                                all nessaccery parts for installation. input customer orders and corrected pricing. Inventory 
+                                control, testing failed product, customer service and installation phone support. Represented 
+                                the company at Light Fair in Las Vegas, NV.
+                            </p>
+                        </div>
+                        
+                        <p>
+                        
+                            <a href="#top">Back To Top</a>
+                        </p>
+                    </section>
+                    <section id="classes">
+                        <h2>Courses Studied</h2>
+                        <p>
+                            During my formal education at Penn State I completed multiple classes
+                            in Software Design and Coding.
+                        </p>
+                        <div class="educationContainer">
+                          
+                            
+                            <h4>Penn State Classes</h4>
+                        </div>
+                        
+                        <h5 class='h5'>Data Organization</h5>
+                        <h5 class='h5'>Network and Telecommunication</h5>
+                        <h5 class='h5'>Introduction to Web Design</h5>
+                        <h5 class='h5'>Introduction to Python Programming</h5>
+                        <h5 class='h5'>Introduction to Application Development</h5>
+                        <h5 class='h5'>Information and Organization, Database Organization</h5>
+                        <h5 class='h5'>Object Oriented Application Development</h5>
+                        <h5 class='h5'>Object Oriented Programming and Software Development</h5>
+                        <h5 class='h5'>Human Centered Design</h5>
+                        <h5 class='h5'>Emerging Issues and Technology, Health Information Technology</h5>
+                        <h5 class='h5'>Application Development Studio I</h5>
+                        <h5 class='h5'>Distributed -Object Computing</h5>
+                        <h5 class='h5'>The Engineering of Complex Software Systems</h5>
+                        <h5 class='h5'>Emerging Issues and Technology, Content Management Systems</h5>
+                        <div class="educationContainer">
+                          
+                            
+                            
+                        <div class="educationContainer">
+                          
+                            
+                            
+                        <p>
+                            <a href="#top">Back To Top</a>
+                        </p>
+                    </section>
+                    <section id="skills">
+                        <h2>Awards and Skills</h2>
+                        <div class="educationContainer">
+                            <h4>Awards and Certificates</h4>
+                            
+                       
+                            <h5 class='h5'>IST Certificate</h5>
+                            <h5 class='h5'>Women in Engineering Scholarship Contest, 2nd place</h5>
+                            <h5 class='h5'>Deans List</h5>
+                            <h5 class='h5'>Honorary Discharge from USAF</h5>
+                            
+                        </div>
+                        <div class="educationContainer">
+                            
+                            <h4>Skills</h4>
+                        </div>
+                                <ul class='ul'>
+                                    <li>Teamwork</li>
+                                    <li>JAVA</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>OOP</li>
+                                    <li>Human-Centered Design</li>
+                                    <li>AGILE</li>
+                                    <li>SCRUMM</li>
+                                    <li>SLCD</li>
+                                    <li>ArcGIS</li>
+                                    <li>Geograpical MApping</li>
+                                    <li>Android Studio</li>
+                                    <li>Xcode</li>
+                                    <li>Python</li>
+                                    <li>Restful Web Services</li>
+                                    <li>IDE</li>
+                                    <li>Progressive Web Apps</li>
+                                    
+                                </ul>
+                    
+                </article>
+
+                <aside id="info">
+                    <h3> Helpful Links</h3>
+                    <h4>
+                        &nbsp;&nbsp;<a href="https://www.worldcampus.psu.edu/?cid=CPC39866&gad=1&gclid=EAIaIQobChMI_eX9yrC5gAMVjExHAR3L4QCjEAAYASAAEgK_F_D_BwE" target="_blank" rel='noopener'>Penn State World Campus</a>
+                    </h4>
+                    <h4>
+                        &nbsp;&nbsp;<a href="https://www.linkedin.com/in/nicole-sollenberger/" target="_blank" rel='noopener'>Nicole's LinkedIn Profile</a>
+                    </h4>
+                    <h4>
+                        &nbsp;&nbsp;<a href="https://github.com/NikkiSoll36" target="_blank" rel='noopener'>Nicole's GitHub</a>
+                    </h4>
+                    <h4>
+                        &nbsp;&nbsp;<a href="https://insights.stackoverflow.com/survey/2018/#technology" target="_blank" rel="noopener">Most Popular Languages</a>
+                    </h4>
+                  
+                   
+                    
+                </aside>
+
+            </div> 
+        </div> 
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <p class="footerLinks">
+                    <a href="#top">Top</a><br/>
+                    <a href="#education">Education</a><br/>
+                    <a href="#employment">Employment</a><br/>
+                    <a href="#courses">Classes</a>
+                </p>
+                <p>
+                    &copy; 2023 Nicole Sollenberger  <br/>106 N Nicodemus St,<br/>Martinsburg, PA 16662 <br/>720-539-6654
+                </p>
+            </footer>
+        </div>
+        <div id="instructions">
+            <button onClick="hideInstructions()">X</button>
+            <p>
+                <img src="apple-touch-icon.png" alt="icon"/>
+            </p>
+            <p>
+                Install my app on your home screen for quick access
+            </p>
+            <p>
+                Tap <img src="img/share.png" alt="share"/> then <img src="img/aths.png" alt="add to home screen"/>
+            </p>
+        </div>
+        <script type="module">
+  
+</script>                
+    </body>
+</html>
