@@ -17,7 +17,7 @@ var pwaSupport = false;
 if('serviceWorker' in navigator){
     pwaSupport = true;
     //register service worker
-    navigator.serviceWorker.register('/sw.js').then(function(result){
+    navigator.serviceWorker.register('/PWANicole/sw.js').then(function(result){
         console.log('Service worker registered');
         console.log('Scope: '+result.scope);
         
